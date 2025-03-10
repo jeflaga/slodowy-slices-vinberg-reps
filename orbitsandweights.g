@@ -1,4 +1,5 @@
 LoadPackage("sla");
+SetInfoLevel( InfoSLA, 1 );
 
 #Given theta with source L and an sl2-triple s, return the dimension of the centralizer of f in h_0. (Equivalently, the dimension of the centralizer of #h in h_0)
 
