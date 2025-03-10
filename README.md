@@ -4,7 +4,7 @@ This repository contains supplementary [GAP](https://www.gap-system.org) code fo
 
 Open GAP and copy-paste or load the contents of 
 >orbitsandweights.g
-The file "examples.g" contains various examples of the determination of all the nilpotent orbits of codimension at most 1 in a stable Vinberg representation, together with a determination of the weights of the $\mathbb{G}_m \times \mu_m$-action on the Slodowy slices $S_e$ for representatives $e$ of the nilpotent orbits.
 
+The file "examples.g" contains various examples of the determination of all the nilpotent orbits of codimension at most 1 in a stable Vinberg representation, together with a determination of the weights of the $\mathbb{G}_m \times \mu_m$-action on the Slodowy slices $S_e$ for representatives $e$ of the nilpotent orbits.
 
 The file "stablegradinglist.g" contains many stable gradings on exceptional Lie algebras.
