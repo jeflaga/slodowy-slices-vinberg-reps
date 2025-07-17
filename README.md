@@ -2,7 +2,7 @@
 
 This repository contains supplementary [GAP](https://www.gap-system.org) code for the paper 
 
->Families of curves in Vinberg representations (insert ArXiv link)
+>Families of curves in Vinberg representations
 
 by Jef Laga and Beth Romano. It relies on the [SLA package](https://gap-packages.github.io/sla/) written and maintained by Willem de Graaf.
 
