@@ -7,10 +7,8 @@
 theta:=FiniteOrderInnerAutomorphisms("G",2,2)[1];;
 smallorbitdata(theta);;
 
-
 #Stable 2-grading on F4:
 theta:=FiniteOrderInnerAutomorphisms("F",4,2)[2];;
 smallorbitdata(theta);;
 
-
-#In each case, there are at least two nilpotent orbits of codimension 1 whose Dynkin labeling has all labels equal to 2 except one label equal to zero. Such orbit are theta-subregular, and inspecting the weights shows that they have distinct G_m-weights on X_e
+#In each case, there are two nilpotent orbits of codimension 1 whose Dynkin labeling has all labels equal to 2 except one label equal to zero. Such orbit are theta-subregular, and inspecting the weights shows that they have distinct G_m-weights on X_e
