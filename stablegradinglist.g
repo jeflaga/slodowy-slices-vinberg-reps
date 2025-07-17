@@ -7,8 +7,6 @@ Print(i," ",KacDiagram(f[i]),"\n");
 od;
 #Examining the Kac diagrams and comparing with Reeder--Levy--Yu--Gross ("Gradings of positive rank on simple Lie algebras", Section 7.1) shows that f[2] is the stable grading. 
 
-
-
 #Using the same method, we record many of the stable gradings on exceptional Lie algebras below.
 
 #Stable 2-grading on G2:
@@ -41,9 +39,9 @@ theta:=FiniteOrderOuterAutomorphisms("E",6,12,2)[14];;
 theta:=FiniteOrderInnerAutomorphisms("E",7,6)[27];;
 #Stable 14-grading on E7:
 theta:=FiniteOrderInnerAutomorphisms("E",7,14)[??];;
-#Stable 3-grading on E8: (warning: computations might take a very long time for this one, and it can be analyzed using other means, see Vinberg-Elashvili)
+#Stable 3-grading on E8: (warning: orbit computations take a very long time for this grading, and it can be analyzed using other means, see Vinberg-Elashvili)
 theta:=FiniteOrderInnerAutomorphisms("E",8,3)[??];;
-#Stable 4-grading on E8: (might take a long time? Calculation did not terminate after one hour on my laptop)
+#Stable 4-grading on E8:
 theta:=FiniteOrderInnerAutomorphisms("E",8,4)[4];;
 #Stable 5-grading on E8:
 theta:=FiniteOrderInnerAutomorphisms("E",8,5)[6];;
