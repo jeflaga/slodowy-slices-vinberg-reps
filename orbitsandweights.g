@@ -1,7 +1,7 @@
 LoadPackage("sla");
 SetInfoLevel( InfoSLA, 1 );
 
-#Given theta with source L and an sl2-triple s, return the dimension of the centralizer of f in h_0. (Equivalently, the dimension of the centralizer of #h in h_0)
+#Given theta with source L and an sl2-triple s, return the dimension of the centralizer of f in h_0. (Equivalently, the dimension of the centralizer of e in h_0)
 
 codimension := function(theta,L,s)
 local U1,U2;
@@ -10,7 +10,7 @@ U2:=Centralizer(L,s[1]);
 return Dimension(Intersection(U1,U2));
 end;
 
-#Given theta and source L and a list of sl2-triples S, return the sublist of sl2-triples whose nilpotent orbit has codimension 0 or 1. (We assume theta is stable in this function to know that the codimension equals z_{h_0}(e).
+#Given a stable theta with source L and a list of sl2-triples S, return the sublist of sl2-triples whose nilpotent orbit has codimension 0 or 1. (We assume theta is stable in this function to know that the codimension equals z_{h_0}(e).)
 
 smallorbits := function(theta,L,S)
 local Ssmall,i;
@@ -24,7 +24,7 @@ return Ssmall;
 end;
 
 
-#Given theta of order m with source L and an sl2-triple s, compute the weights for the Gm\times \mu_m-action \rho\times \sigma on #the slice S_e = e + z_h(f). We record the weights as tuples (a,b) with a an integer and b an integer mod m.
+#Given a stable theta of order m with source L and an sl2-triple s, compute the weights for the Gm\times \mu_m-action \rho\times \sigma on #the slice S_e = e + z_h(f). We record the weights as tuples (a,b) with a an integer and b an integer mod m.
 #(Note that if s is a normal regular triple, then these weights are also the weights on the GIT quotient B = h1//G.)
 
 weights:=function(theta,m,L,s)
@@ -66,7 +66,7 @@ od;
 end;
 
 
-#Given a grading theta on a Lie algebra L and a list of sl2-triples S, print the weighted Dynkin diagrams of the nilpotent elements of S, together with their weights under the G_m\times \mu_m-action, and return the closure relations between them.
+#Given a stable grading theta on a Lie algebra L and a list of sl2-triples S, print the weighted Dynkin diagrams of the nilpotent elements of S, together with their weights under the G_m\times \mu_m-action, and return the closure relations between them.
 
 orbitdata:= function(theta,L,S)
 local r, i, m;
@@ -84,7 +84,7 @@ Print("Closure relations: ",r.diag);
 return r;
 end;
 
-#Given theta, determine all the orbits of codimension \leq 1 and print their orbit data, and return the set of sl2-triples and the closure relations between them.
+#Given a stable theta, determine all the orbits of codimension \leq 1 and print their orbit data, and return the set of sl2-triples and the closure relations between them.
 smallorbitdata:=function(theta)
 
 local L, m, S;
